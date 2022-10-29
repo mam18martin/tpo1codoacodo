@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>En barra contacto</h1>
+    <div id="id01"></div>
+    <script>
+        //var xmlhttp = new XMLHttpRequest();
+        let url = "https://my-json-server.typicode.com/typicode/demo/db";
+        //var out = "";
+        
+        fetch (url)
+        .then(x => x.json())
+        .then(y => document.getElementById("id01").innerHTML = y.posts[0].title);
+
+
+
+        //out = getText(url);
+        
+        
+        /*
+        if(commits.posts[0].title != ""){
+        out = commits.posts[0].title;
+        }else{
+        out = "nada";
+        }
+        */
+        /*
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            myFunction(myArr);
+          }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+        
+        function myFunction(arr) {
+          var out = "";
+          arr.posts.forEach(
+            function(item,index){
+            out += index + ": " + item.title + "<br>"; 
+            }
+          );
+          }
+        
+        out.then((posts)=>{
+            document.getElementById("id01").innerHTML = posts[0].title;
+        });
+        */
+         
+        
+        
+        </script>
+</body>
+</html>

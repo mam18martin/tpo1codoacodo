@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+#tope {
+  background: url("../images/imagentop.jpg") no-repeat 0 0;
+  background-size: 80%;
+  background-color: #14110c;
+  width: 100%;
+  height: 30vw;
+}
+
+#toptext {
+  float: right;
+  padding-right: 30px;
+  padding-top: 70px;
+}
+
+#logocont {
+  background-color: black;
+  height: 85vh;
+  width: 30%;
+  padding-bottom: 5px;
+  float: left;
+}
+
+#toptext h1 {
+  color: #f7550b;
+  font-family: 'Pinyon Script';
+  font-size: 10vw;
+  font-weight: 400;
+}
+
+#toptext h5 {
+  color:#747474;
+}
+
+nav {
+  color: #82a476;
+}
+
+#menu {
+  width: 100%;
+  height: auto;
+  text-align: right;
+  background-color: black;
+}
+
+#menu a {
+  padding: 10px;
+  text-decoration: none;
+  color:#82a476;
+}
+
+#menu a:hover {
+  color: antiquewhite;
+  background-color: #82a476;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Marca */
+
+.marcacontenedor {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(204, 202, 194);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  
+}
+
+section.marcacontenedor {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.marcacontenedor > div {
+  width: 33.33%;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.marcacontenedor p {
+  font-family: 'Wire One', sans-serif;
+  font-weight: 400;
+  font-size:30px;
+}
+
+/* Grid para productos */
+
+#nuestros-productos {
+  background-color: rgba(209, 206, 206, 0.5);
+  text-align: center;
+}
+
+#nuestros-productos h1 {
+  font-family: 'Amita', cursive;
+  font-weight: 400;
+  font-size: 50pt;
+}
+
+#prodcontainer {
+  background: url("../images/fondo-productos.jpg") no-repeat fixed 0 0;
+  padding: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(360px, 1fr));
+  grid-gap: 1rem;
+}
+
+.grid-item {
+  background: rgba(240, 231, 215, 0.3);
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: .2rem;
+  grid-template-columns: 150px 1fr;
+  padding: 1rem;
+  grid-gap: .5rem;
+}
+
+.grid-item h2 {
+  color: #eceae8;
+  font-family: 'Amita', cursive;
+  font-weight: 400;
+
+}
+
+.grid-item p {
+  color: #dbdfd7;
+  font-family: 'Wire One', sans-serif;
+  font-weight: 400;
+  font-size:30px;
+}
+
+.grid-item img {
+width: 100%;
+border-radius: 1rem;
+}
+
+#section-frase{
+  background: url("../images/campanas.jpg") no-repeat fixed 0 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+#section-frase div {
+  padding: 50px;
+  background-color: rgba(209, 206, 206, 0.5);
+  text-align: center;
+  color: #eceae8;
+  font-family: 'Amita', cursive;
+  font-size: 30pt;
+  font-weight: 400;
+
+}
+
+#formcontenedor{
+  background-color: #82a476;
+  padding: 200px;
+}
+
+footer{
+  padding: 200px;
+  background-color: #14110c;
+}
+
+footer div {
+  color: aqua;
+}
+
+
+
+
+  
+
