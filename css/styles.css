@@ -22,14 +22,6 @@ body {
   padding-top: 70px;
 }
 
-/* #logocont {
-  background-color: black;
-  height: 85vh;
-  width: 30%;
-  padding-bottom: 5px;
-  float: left;
-} */
-
 #logocont {
   background-color: #000000;
   width: 30%;
@@ -178,20 +170,6 @@ border-radius: 1rem;
 
 }
 
-/* #formcontenedor{
-  background-color: #82a476;
-  padding: 200px;
-}
-
-footer{
-  padding: 200px;
-  background-color: #14110c;
-}
-
-footer div {
-  color: aqua;
-} */
-
 #formcontenedor{
   background-color: #82a476;
 }
@@ -260,7 +238,7 @@ footer div {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -268,7 +246,7 @@ footer div {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -325,6 +303,14 @@ footer div {
 
   #myTopnav nav{
     float:none;
+  }
+
+  #toptext{
+    padding-top:30px;
+    }
+    
+  .grid-container {
+    display: block;
   }
 
 
