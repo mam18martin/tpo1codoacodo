@@ -296,9 +296,13 @@ footer div {
     padding-top: 20px;
   }
 
-  .topnav{
+  .topnav {
     height: auto;
     width: 100%;
+  }
+
+  .topnav a {
+    padding-top: 0;
   }
 
   #myTopnav nav{
