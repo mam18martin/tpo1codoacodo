@@ -20,6 +20,10 @@
 
 </head>
 <body>
+    <!-- <a class='flotante' href='#' ><img src='boton-flotante.png' border="0"/></a> -->
+    <a id="flotante" class='flotante' href='#contmenu' onclick="subirOff();">SUBIR</a>
+
+
     <div class="containerdoc">
         <header>
             <div id="tope">
@@ -38,9 +42,9 @@
                 <div id="myTopnav" class="topnav">
                     <nav id="inicio">
                         <a href="#contmenu">Inicio</a>|
-                        <a href="#nuestros-productos">Productos</a>
-                        <a href="#nuestros-servicios">Servicios</a>
-                        <a href="#formcontenedor">Contacto</a>
+                        <a href="#nuestros-productos" onclick="subirOn();">Productos</a>
+                        <a href="#nuestros-servicios" onclick="subirOn();">Servicios</a>
+                        <a href="#formcontenedor" onclick="subirOn();">Contacto</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
                     </nav>
                 </div>
@@ -185,6 +189,16 @@
             } else {
                 x.className = "topnav";
             }
+        }
+
+        function subirOn() {
+            var x = document.getElementById("flotante");
+                x.style.display='block';
+        }
+
+        function subirOff() {
+            var x = document.getElementById("flotante");
+                x.style.display='none';
         }
     </script>
 </body>

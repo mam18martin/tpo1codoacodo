@@ -8,6 +8,14 @@ body {
   font-size: 14pt;
 }
 
+.flotante {
+  /* display:scroll; */
+  display: none;
+  position:fixed;
+  bottom:20px;
+  right:0px;
+}
+
 #tope {
   background: url("../images/imagentop.jpg") no-repeat 0 0;
   background-size: 80%;
